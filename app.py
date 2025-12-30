@@ -3,11 +3,11 @@ from fastmcp import FastMCP
 mcp = FastMCP()
 
 @mcp.tool()
-def add(a:int, b:int) -> int:
+def multiply(a:int, b:int) -> int:
     """
-    Add two numbers.
+    Multiply two numbers.
     """
-    return a + b
+    return a * b
 
 if __name__ == "__main__":
     mcp.run(
