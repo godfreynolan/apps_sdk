@@ -70,14 +70,11 @@
     </style>
 </head>
 <body>
-
 <div id="chat" class="chat-container"></div>
-
 <form id="form">
     <input id="input" type="text" placeholder="Type a pizza topping…" required/>
     <button type="submit">Send</button>
 </form>
-
 <script>
     const chat = document.getElementById("chat");
     const form = document.getElementById("form");
@@ -106,7 +103,6 @@
     if (output && typeof output === "object") {
         bot("Received from server (structuredContent):");
         bot(JSON.stringify(output, null, 2));
-
         if (output.pizzaTopping) {
             bot("🍕 Your topping from the server is: " + output.pizzaTopping);
         }
@@ -124,3 +120,4 @@
 
 </body>
 </html>
+
