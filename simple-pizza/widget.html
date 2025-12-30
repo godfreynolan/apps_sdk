@@ -116,11 +116,8 @@
         e.preventDefault();
         const topping = input.value.trim();
         if (!topping) return;
-
         user(topping);
-
         bot("Here is your pizza with " + topping + " 🍕");
-
         input.value = "";
     });
 </script>
